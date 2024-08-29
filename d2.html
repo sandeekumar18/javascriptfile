@@ -1,0 +1,29 @@
+<html></html>
+<head>
+<style>
+  h1{
+  background:green;
+  color:lightgreen;
+  border:5px solid lightgreen;
+  text-align:center;
+  }
+</style>
+</head>
+<body>
+<h1 id="t1">welcome to my collage</h1>
+<h1 id="t2">welcome to my home</h1>
+<button onclick="demo()">Click ME</button>
+<script>
+function demo()
+{
+var x=document.getElementById("t1")
+var y=document.getElementById("t2")
+var v1=x.innerText
+var v2=y.innerText
+x.innerText=v2
+y.innerText=v1
+}
+setInterval("demo()",3000)
+</script>
+</body>
+</html>

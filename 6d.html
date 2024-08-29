@@ -1,0 +1,32 @@
+<html>
+<head></head>
+<body>
+<input type="text" id="txt1"/>
+<i id="msg"></i><br/>
+<button onclick="demo()" id="btn">CLICK ME</button>
+<script>
+function demo()
+{
+var x=document.getElementById("txt1")//mohan
+var m=document.getElementById("msg")
+var b=document.getElementById("btn")//ram
+if(x.value=="")
+{
+m.innerHTML="please Enter value in Textbox"
+m.style.color="red"
+x.style.border="3px solid red"
+b.style.background="red"
+b.style.color="white"
+}
+else
+{
+m.innerHTML="<b>value is:</b>"+x.value
+m.style.color="green"
+x.style.border="3px solid green"
+b.style.background="green"
+b.style.color="white"
+}
+}
+</script>
+</body>
+</html>
