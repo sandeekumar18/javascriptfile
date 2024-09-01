@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //21.Write a function expression that checks if a number is prime.
+        let flag = 0;
+        const prime = function PrimeNum(num) {
+            for (let i = 2; i <= num/2; i++) {
+                if(num % i == 0){
+                    flag++;
+                    break;
+                }
+            }
+            if (flag > 0) {
+                console.log("Not a Prime Number");
+            } else {
+                console.log("Prime Number");
+            }
+        }
+        prime(9);
+    </script>
+</body>
+</html>

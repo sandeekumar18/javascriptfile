@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 1. Use all user defined function (Named function , function expression, arrow function,
+        anonymous function, IIFE, callback function) and print a statement in console screen. */
+
+        //Named Function
+        function namedFun() {
+            console.log("Named Function");
+        }
+        namedFun();
+
+        //Function Expression
+        const funExpression = function fun1() {
+            console.log("Expression Function");
+        }
+        funExpression();
+
+        //Arrow Function
+        const arrowFun = () =>{
+            console.log("Arrow Function");
+        }
+        arrowFun();
+
+        //IIFE
+        (function IIFE() {
+            console.log("IIFE");
+        }) ();
+
+        //Callback
+        const greet = (callback) =>{
+            callback();
+        }
+        const cb = () =>{
+            console.log("Callback Function");
+        }
+        greet(cb);
+    </script>
+</body>
+</html>
